@@ -1,0 +1,8 @@
+import math
+cateto_a = int(input('Ingresa la medida del primer cateto: '))
+cateto_b = int(input('Ingresa la medida del segundo cateto: '))
+if (cateto_a <= 0 or cateto_b <= 0):
+    print('Error: Cateto menor o igual a 0')
+suma_catetos = cateto_a ** 2 + cateto_b ** 2
+hipotenusa = math.sqrt(suma_catetos)
+print('La hipotenusa es igual a: ', hipotenusa)
