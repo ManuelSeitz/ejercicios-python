@@ -1,19 +1,10 @@
 def dibujar_arbol(numero):
-    lista_lado_a = []
-    espacio = []
-    for _ in range(numero):
-        lista_lado_a.append(' ')
-        espacio.append(' ')
-    cadena = ''
-    lado_b = ''
-    for i in range(numero - 1, 0, -1):
-        lista_lado_a[i] = '*'
-        lado_a = cadena.join(lista_lado_a)
-        lado_b += '*'
-        print(lado_a + lado_b)
+    for i in range(numero, 0, -1):
+        lado_izquierdo = ' ' * i + '*' * ((numero - i) + 1)
+        lado_derecho = '*' * (numero - i) + ' ' * i
+        print(lado_izquierdo + lado_derecho)
     for _ in range(2):
-        espacio_tronco = cadena.join(espacio)
-        print(espacio_tronco + '!')
+        print(' ' * numero + '|')
 
 
-dibujar_arbol(6)
+dibujar_arbol(5)
