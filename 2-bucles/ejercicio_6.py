@@ -1,3 +1,5 @@
+"""Escribir el sumatorio de los números que se quiera hasta ingresar -1."""
+
 NUMERO_CANCELACION = -1
 numero_ingresado = 0
 sumatoria = 0

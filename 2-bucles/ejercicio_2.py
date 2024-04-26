@@ -1,3 +1,6 @@
+"""Calcular el factorial de un número."""
+
+
 def calcular_factorial(numero):
     if numero == 0:
         return 1
@@ -7,4 +10,4 @@ def calcular_factorial(numero):
     return factorial
 
 
-print('El factorial es:', calcular_factorial(10))
+print('El factorial es:', calcular_factorial(5))

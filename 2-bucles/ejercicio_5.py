@@ -1,4 +1,9 @@
+"""Crea un algoritmo que dibuje un árbol dado un número."""
+
+
 def dibujar_arbol(numero):
+    if numero < 1:
+        return ''
     for i in range(numero, 0, -1):
         lado_izquierdo = ' ' * i + '*' * ((numero - i) + 1)
         lado_derecho = '*' * (numero - i) + ' ' * i
@@ -7,4 +12,4 @@ def dibujar_arbol(numero):
         print(' ' * numero + '|')
 
 
-dibujar_arbol(5)
+dibujar_arbol(-1)

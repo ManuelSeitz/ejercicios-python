@@ -1,3 +1,5 @@
+"""Crea un algoritmo para la sucesión de Fibonacci."""
+
 fibonacci = []
 for i in range(0, 10):
     if (i == 0 or i == 1):

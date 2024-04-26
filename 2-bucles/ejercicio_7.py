@@ -1,3 +1,6 @@
+"""Tenemos la pantalla del móvil bloqueada. Partiendo de un PIN_SECRETO, 
+intentaremos desbloquear la pantalla. Tenemos hasta 3 intentos. """
+
 PIN_SECRETO = 443
 intentos_restantes = 3
 while intentos_restantes > 0:
