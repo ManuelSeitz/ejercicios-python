@@ -12,4 +12,4 @@ def dibujar_arbol(numero):
         print(' ' * numero + '|')
 
 
-dibujar_arbol(-1)
+dibujar_arbol(5)
