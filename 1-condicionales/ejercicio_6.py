@@ -5,7 +5,7 @@ Calcular el precio final según IVA aplicado. Pista: Pide al usuario que tipo de
 
 tipo_factura = input('Ingresa el tipo de factura: ')
 valor_factura = int(input('Ingresa el valor de la factura: '))
-if tipo_factura == 'restaurante':
+if tipo_factura.lower() == 'restaurante':
     DESCUENTO_IVA = 0.9
 else:
     DESCUENTO_IVA = 0.79
