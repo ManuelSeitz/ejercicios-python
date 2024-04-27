@@ -1,3 +1,8 @@
+"""Pedir la puntuación media de las personas para cada asignatura de un curso 
+a partir de un número de personas. 
+Deberás iniciar los cursos para después añadir el número de alumnos y pedir las puntuaciones media.
+"""
+
 CANTIDAD_ALUMNOS = 2
 ASIGNATURAS = []
 input_asignaturas = input('Ingresa las asignaturas separadas por coma: ')

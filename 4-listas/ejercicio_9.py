@@ -1,3 +1,10 @@
+"""Imagina construir un sistema de planning de vuelos de un aeropuerto cercano. 
+Crea una planificación donde dentro contiene, por día de la semana, horario, 
+compañia, duracion_estimada, tipo_avion.
+Utiliza una lista dentro de otra lista.
+PD: Después de llenar los datos necesitarás ofrecer al usuario ver la información.
+"""
+
 PLANNING_VUELOS = [
     # Lunes
     [

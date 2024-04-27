@@ -1,3 +1,8 @@
+"""Calcular la tabla de multiplicar de los 20 primeros números dado un número. 
+La lista, según su posición, almacenará el resultado de la multiplicación.
+"""
+
+
 def generar_tabla_multiplicar(numero):
     LIMITE_TABLA = 20
     TABLA = []

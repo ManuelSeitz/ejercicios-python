@@ -1,3 +1,9 @@
+"""Añade las estadísticas de los primeros 10 pokemon en nuestra pokedex.
+Fíjate qué estadísticas quieres para todos los pokemon. 
+Aquí algunas sugerencias: nombre, ataque, hp, defensa, velocidad, at_Esp, def_Esp
+Después, utiliza la lista como una pokedex para consultarlo.
+"""
+
 POKEDEX = []
 
 while True:
@@ -19,8 +25,8 @@ while True:
         break
 
     if operacion == 1:
-        continuar = True
-        while continuar:
+        CONTINUAR = True
+        while CONTINUAR:
             print()
             nombre = input('Ingresa el nombre del pokemon: ')
             ataque = int(input('Ingresa la cantidad de ataque: '))
@@ -36,18 +42,18 @@ while True:
 
             POKEDEX.append(POKEMON)
 
-            continuar = bool(
+            CONTINUAR = bool(
                 int(input('¿Desea seguir ingresando? 1 para SÍ, 0 para NO: ')))
     elif operacion == 2:
         consulta = input('Ingrese el nombre del pokemon que desea consultar: ')
-        respuesta = ''
+        RESPUESTA = ''
         for pokemon in POKEDEX:
             if pokemon["nombre"].lower() == consulta.lower():
-                respuesta = pokemon
+                RESPUESTA = pokemon
                 break
-        if respuesta != '':
+        if RESPUESTA != '':
             print()
-            print(respuesta)
+            print(RESPUESTA)
         else:
             print('Pokemon no encontrado.')
     else:

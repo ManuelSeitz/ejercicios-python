@@ -1,3 +1,8 @@
+"""Simula una cesta de la compra. 
+Después, una vez tengas la lista de la compra, elimina el último elemento. 
+Después, invierte los elementos de la lista y muestra qué queda de resultado.
+"""
+
 CESTA_COMPRAS = []
 
 print('Lista de compras'.center(40))
