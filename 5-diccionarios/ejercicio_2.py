@@ -1,5 +1,11 @@
-import random
-CANTIDAD_PERSONAJES = 2
+"""Utiliza el ejercicio de el sistema a turnos de los ejercicios de Bucles For y While.
+Modifícalo para que las estadísticas de cada jugador sean una estructura de diccionario. 
+Después, juega a tu antojo y modifica el cambio de estadísticas 
+como si fueras un diseñador de videojuegos.
+"""
+
+from random import randint
+CANTIDAD_PERSONAJES = int(input('Ingrese la cantidad de jugadores: '))
 PERSONAJES = []
 JUEGO_TERMINADO = False
 
@@ -9,17 +15,15 @@ for i in range(CANTIDAD_PERSONAJES):
     )
     TEMPLATE_PERSONAJE = {
         "nombre": NOMBRE_PERSONAJE,
-        "ataque": random.randint(5, 20),
-        "defensa": random.randint(40, 60)
+        "ataque": randint(5, 20),
+        "defensa": randint(40, 60)
     }
     PERSONAJES.append(TEMPLATE_PERSONAJE)
 
 while not JUEGO_TERMINADO:
-    TURNO = random.randint(0, len(PERSONAJES) - 1)
-    if (TURNO == len(PERSONAJES) - 1) and (len(PERSONAJES) == 2):
+    TURNO = randint(0, len(PERSONAJES) - 1)
+    if TURNO == len(PERSONAJES) - 1:
         SIGUIENTE_PERSONAJE = 0
-    elif (TURNO == len(PERSONAJES) - 1) and (len(PERSONAJES) > 2):
-        SIGUIENTE_PERSONAJE = 1
     else:
         SIGUIENTE_PERSONAJE = TURNO + 1
 
