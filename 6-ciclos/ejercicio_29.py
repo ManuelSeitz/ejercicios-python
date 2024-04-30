@@ -4,7 +4,7 @@ y nos diga cuántos hay entre 1 y N que sean primos (divisibles por 1 y por si m
 
 
 def es_primo(numero: int):
-    if numero == 1:
+    if numero <= 1:
         return False
     if numero == 2:
         return True
