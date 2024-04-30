@@ -70,13 +70,11 @@ DIAS_SEMANA = {
 print('Planning de vuelos'.upper().center(40))
 dia_semana = input('Ingrese el día que desea consultar: ')
 DIA_ENCONTRADO = False
-for i in enumerate(DIAS_SEMANA):
-    INDEX = i[0]
-    PROPIEDAD = i[1]
+for [i, PROPIEDAD] in enumerate(DIAS_SEMANA):
     if dia_semana.capitalize() == DIAS_SEMANA[PROPIEDAD]:
         DIA_ENCONTRADO = True
         print(DIAS_SEMANA[PROPIEDAD])
-        for planes in PLANNING_VUELOS[INDEX]:
+        for planes in PLANNING_VUELOS[i]:
             print(planes)
         break
 
